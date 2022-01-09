@@ -1,0 +1,133 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mochiy Pop P One', sans-serif;
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(31, 31, 31);
+  perspective: 500px;
+  background-image: url('https://www.weekendnotes.com/im/004/03/kung-fu-panda-3-jack-black-po-viper-crane-dustin-h51.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotateX(0deg);
+  width: 320px;
+  height: 568px;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: hover 1s ease,transform 1s ease;
+}
+.main-box:hover{
+  transform: translate(-50%, -50%) rotateX(-180deg);
+}
+.box{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 568px;
+  transform: rotateX(0deg);
+}
+.img-box{
+  backface-visibility: hidden;
+}
+.social-box{
+  background-image: url('https://i.pinimg.com/originals/c2/90/6e/c2906ec3b7f2d7036f8efd8744eb189f.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateX(180deg);
+  text-align: center;
+  align-items: center;
+  border-radius: 7px;
+}
+.title,
+.text{
+  color: rgb(12, 12, 12);
+  padding-top: 30px;
+}
+.title{
+  line-height: 40px;
+}
+.text{
+  margin-top: -30px;
+  margin-bottom: 70px;
+}
+.social-list{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.social-item{
+  padding: 10px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.social-item:not(:last-child){
+  margin-bottom: 25px;
+}
+.social-item:hover{
+    transform:scale(1.3)
+}
+.social-item:nth-child(1):hover{
+  outline: 3px solid #28a7e8;
+  box-shadow: 0px 0px 24px 7px rgba(40, 167, 232, 0.79);
+}
+.social-item:nth-child(2):hover{
+  outline: 3px solid #4ea0ec;
+  box-shadow: 0px 0px 24px 7px rgba(40, 167, 232, 0.79);
+}
+.social-item:nth-child(3):hover{
+  outline: 3px solid #f00;
+  box-shadow: 0px 0px 24px 7px rgba(255, 0, 0, 0.79);
+}
+.social-item:nth-child(4):hover{
+  outline: 3px solid #53f26e;
+  box-shadow: 0px 0px 24px 7px rgba(83, 242, 110, 0.79);
+}
+
+.social-link{
+  text-decoration: none;
+}
+.bx{
+  font-size: 32px;
+}
+.bxl-telegram{
+  color: #28a7e8;
+}
+.bxl-twitter{
+  color: #4ea0ec;
+}
+.bxl-youtube{
+  color: #f00;
+}
+.bxl-whatsapp{
+  color: #53f26e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
